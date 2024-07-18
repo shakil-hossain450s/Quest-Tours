@@ -39,6 +39,20 @@ html {
     }
 }
 
+.section-title {
+    color: #131318;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2.4rem;
+}
+
+.section-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 2.4rem;
+}
+
 /* header & nav related styles */
 header {
     width: 82%;
@@ -157,6 +171,30 @@ select {
     }
 }
 
+/* main styles */
+main {
+    width: 82%;
+    max-width: 1440px;
+    margin: 10rem auto;
+}
+
+/* popular tour content styles */
+.popular-tour-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.popular-tour-content, .popular-tour-image{
+    width: 50%;
+}
+.popular-tour-content ul{
+    margin-left: 2rem;
+    margin-right: 6rem;
+}
+
+.popular-tour-image img{
+    width: 100%;
+}
 
 /* Responsive Media Query */
 /* Mobile device */
@@ -220,17 +258,7 @@ select {
 
     .nav-title {
         gap: 1rem;
-
     }
-
-    /* nav>.nav-list,
-    .break {
-        display: none;
-    } */
-
-    /* .nav-title img {
-        width: 3rem;
-    } */
 
     .nav-title h2 {
         font-size: 2.4rem;
@@ -239,16 +267,6 @@ select {
     .banner {
         padding: 3.2rem 1.6rem;
     }
-
-    /* .banner-content .banner-title {
-        font-size: 2.2rem;
-        margin-bottom: 0.8rem;
-    } */
-
-    /* .banner-input {
-        flex-direction: column;
-        margin: 0 2.4rem;
-    } */
 
     .banner-input input[type="text"],
     select,
