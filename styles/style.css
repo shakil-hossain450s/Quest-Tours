@@ -200,9 +200,14 @@ main {
 /* Mobile device */
 @media screen and (max-width: 600px) {
     header {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 3rem;
+    }
+
+    main{
+        width: 90%;
+        margin: 2.4rem auto;
     }
 
     .nav-title {
@@ -243,8 +248,25 @@ main {
 
     .banner-input input[type="text"],
     select,
-    .btn-primary {
+    .banner-input .btn-primary {
         width: 100%;
+    }
+
+    .popular-tour-section{
+        flex-direction: column;
+    }
+
+    .popular-tour-content, .popular-tour-image{
+        width: 100%;
+    }
+
+    .section-title{
+        font-size: 2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .section-description{
+        margin-bottom: 1.6rem;
     }
 }
 
