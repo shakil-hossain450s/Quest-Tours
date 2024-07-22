@@ -39,6 +39,10 @@ html {
     }
 }
 
+section {
+    margin: 10rem 0;
+}
+
 .section-title {
     color: #131318;
     font-size: 4rem;
@@ -199,6 +203,198 @@ main {
     width: 100%;
 }
 
+/* Choose Your Destination section styles */
+.section-heading {
+    width: 52rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.4rem;
+    margin-bottom: -5rem;
+}
+
+.destination-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.destination-img-container #img-1 {
+    grid-column: 1/span 6;
+}
+
+.destination-img-container #img-2 {
+    grid-column: 7/span 6;
+}
+
+.destination-img-container #img-3 {
+    grid-column: 1/span 4;
+    grid-row: 2/span 2;
+}
+
+.destination-img-container #img-4 {
+    grid-column: 5/span 5;
+    grid-row: 2/span 2;
+}
+
+.destination-img-container #img-5 {
+    grid-column: 10/span 3;
+    grid-row: 2/span 2;
+}
+
+.destination-img-container #img-6 {
+    grid-column: 1/span 5;
+    grid-row: 3/span 3;
+}
+
+.destination-img-container #img-7 {
+    grid-column: 6/span 7;
+    grid-row: 3/span 3;
+}
+
+/* why choose section styles */
+.why-choose-card-container {
+    display: flex;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-card {
+    width: 54rem;
+    border-radius: 1.6rem;
+    padding: 3.2rem;
+}
+
+.why-choose-card:first-child {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.why-choose-card:nth-child(2) {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.why-choose-card:last-child {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.why-choose-card img {
+    margin-bottom: 3rem;
+}
+
+.card-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+}
+
+.card-description {
+    color: #5A5A5D;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+/* deals and offer section styles */
+.deals-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.deals-card {
+    height: 50rem;
+    border-radius: 1.6rem;
+    object-fit: cover;
+    padding: 5.6rem;
+    display: flex;
+}
+
+.deals-card-container #deals-card-1 {
+    justify-content: flex-end;
+    background-image: url("../images/Group\ 39.png");
+}
+
+.deals-card-container #deals-card-2 {
+    background-image: url("../images/Group\ 40.png");
+}
+
+.deals-card-container #deals-card-3 {
+    justify-content: flex-end;
+    background-image: url("../images/Group\ 39.png");
+}
+
+.inside-card {
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 50rem;
+    padding: 4rem;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.4rem;
+
+    & span {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}
+
+.inside-card .card-price {
+    color: #FF5400;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+.deals-btn {
+    display: block;
+    text-align: center;
+    margin-top: 6rem;
+}
+.deals-btn .btn-primary{
+    width: auto;
+}
+
+/* perfect places section styles */
+.perfect-places{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.perfect-places-content, .perfect-places-video{
+    width: 50%;
+}
+
+.perfect-places-content .simple-place-list-item{
+    margin-left: 3rem;
+
+    & .section-description{
+        font-weight: 700;
+        color: #131318;
+    }
+}
+
+.perfect-places-video img{
+    width: 100%;
+}
+
 /* Responsive Media Query */
 /* Mobile device */
 @media screen and (max-width: 600px) {
@@ -272,6 +468,50 @@ main {
     .section-description {
         margin-bottom: 1.6rem;
     }
+
+    .section-heading {
+        width: 100%;
+    }
+
+    .destination-img-container {
+        display: block;
+    }
+
+    .destination-img-container * {
+        margin-bottom: 1rem;
+    }
+
+    .destination-img-container img {
+        height: 17rem;
+        border-radius: 0.8rem;
+    }
+
+    .why-choose-card {
+        width: 100%;
+    }
+
+    .deals-card {
+        padding: 1.6rem;
+        align-items: end;
+    }
+
+    .inside-card {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .card-info {
+        margin-bottom: 1.8rem;
+    }
+
+    .inside-card .card-title {
+        margin-bottom: 0.8rem;
+    }
+
+    .inside-card .card-price {
+        margin-top: 1.2rem;
+        margin-bottom: 1.6rem;
+    }
 }
 
 /* medium device */
@@ -313,7 +553,23 @@ main {
     .popular-tour-image {
         width: 100%;
     }
+
     .section-description {
         margin-bottom: 1.8rem;
     }
+
+    .why-choose-card {
+        width: 100%;
+    }
+
+    .deals-card {
+        padding: 2.4rem;
+        align-items: end;
+    }
+
+    .inside-card {
+        width: 100%;
+        padding: 2rem;
+    }
+
 }
