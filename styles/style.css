@@ -362,37 +362,110 @@ main {
     margin-top: 1.6rem;
     margin-bottom: 2.4rem;
 }
+
 .deals-btn {
     display: block;
     text-align: center;
     margin-top: 6rem;
 }
-.deals-btn .btn-primary{
+
+.deals-btn .btn-primary {
     width: auto;
 }
 
 /* perfect places section styles */
-.perfect-places{
+.perfect-places {
     display: flex;
     justify-content: space-between;
     gap: 2.4rem;
 }
 
-.perfect-places-content, .perfect-places-video{
+.perfect-places-content,
+.perfect-places-video {
     width: 50%;
 }
 
-.perfect-places-content .simple-place-list-item{
+.perfect-places-content .simple-place-list-item {
     margin-left: 3rem;
 
-    & .section-description{
+    & .section-description {
         font-weight: 700;
         color: #131318;
     }
 }
 
-.perfect-places-video img{
+.perfect-places-video img {
     width: 100%;
+}
+
+/* Newsletter section styles */
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+
+    & .newsletter-content {
+        width: 40%;
+    }
+
+    & .newsletter-image {
+        width: 60%;
+    }   
+}
+
+.newsletter-content {
+    border: 1px solid #FF5400;
+    border-radius: 1.6rem;
+    padding: 3rem;
+}
+
+.newsletter-section hr{
+    /* border: 0.05rem solid #5A5A5D; */
+    margin: 2rem 0;
+}
+
+.newsletter-content form *{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.newsletter-content form input{
+    background-color: #f1f1f1;
+    padding: 1.6rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    color: #d4d4d4;
+}
+.newsletter-image{
+    position: relative;
+}
+.newsletter-image img {
+    width: 100%;
+}
+
+.newsletter-image .save-card{
+    background-color: #FF5400;
+    color: #fff;
+    width: 27rem;
+    padding: 2.4rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    position: absolute;
+    bottom: 16%;
+    right: 1%;
+    transform: rotate(-30deg);
+
+    & h4{
+        font-size: 2.2rem;
+        font-weight: 200;
+    }
+
+    & h2{
+        font-size: 2.8rem;
+    }
 }
 
 /* Responsive Media Query */
