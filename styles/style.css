@@ -410,7 +410,7 @@ main {
 
     & .newsletter-image {
         width: 60%;
-    }   
+    }
 }
 
 .newsletter-content {
@@ -419,18 +419,17 @@ main {
     padding: 3rem;
 }
 
-.newsletter-section hr{
-    /* border: 0.05rem solid #5A5A5D; */
+.newsletter-section hr {
     margin: 2rem 0;
 }
 
-.newsletter-content form *{
+.newsletter-content form * {
     display: block;
     width: 100%;
     margin-bottom: 1.6rem;
 }
 
-.newsletter-content form input{
+.newsletter-content form input {
     background-color: #f1f1f1;
     padding: 1.6rem;
     border: 0;
@@ -439,14 +438,16 @@ main {
     border-radius: 0.8rem;
     color: #d4d4d4;
 }
-.newsletter-image{
+
+.newsletter-image {
     position: relative;
 }
+
 .newsletter-image img {
     width: 100%;
 }
 
-.newsletter-image .save-card{
+.newsletter-image .save-card {
     background-color: #FF5400;
     color: #fff;
     width: 27rem;
@@ -458,12 +459,12 @@ main {
     right: 1%;
     transform: rotate(-30deg);
 
-    & h4{
+    & h4 {
         font-size: 2.2rem;
         font-weight: 200;
     }
 
-    & h2{
+    & h2 {
         font-size: 2.8rem;
     }
 }
@@ -518,18 +519,22 @@ main {
         margin: 0 2.4rem;
     }
 
-    .banner-input input[type="text"],
-    select,
-    .banner-input .btn-primary {
-        width: 100%;
-    }
-
-    .popular-tour-section {
+    .popular-tour-section,
+    .perfect-places,
+    .newsletter-section {
         flex-direction: column;
     }
 
+    .banner-input input[type="text"],
+    select,
+    .banner-input .btn-primary,
     .popular-tour-content,
-    .popular-tour-image {
+    .popular-tour-image,
+    .why-choose-card,
+    .perfect-places-content,
+    .perfect-places-video,
+    .newsletter-section .newsletter-content,
+    .newsletter-section .newsletter-image {
         width: 100%;
     }
 
@@ -559,10 +564,6 @@ main {
         border-radius: 0.8rem;
     }
 
-    .why-choose-card {
-        width: 100%;
-    }
-
     .deals-card {
         padding: 1.6rem;
         align-items: end;
@@ -584,6 +585,21 @@ main {
     .inside-card .card-price {
         margin-top: 1.2rem;
         margin-bottom: 1.6rem;
+    }
+
+    .newsletter-image .save-card {
+        bottom: 27%;
+        right: 3%;
+        width: 25rem;
+
+        & h4 {
+            font-size: 1.8rem;
+            font-weight: 200;
+        }
+
+        & h2 {
+            font-size: 2.4rem;
+        }
     }
 }
 
@@ -614,25 +630,25 @@ main {
 
     .banner-input input[type="text"],
     select,
-    .banner-input .btn-primary {
-        width: 100%;
-    }
-
-    .popular-tour-section {
-        flex-direction: column;
-    }
-
+    .banner-input .btn-primary,
     .popular-tour-content,
-    .popular-tour-image {
+    .popular-tour-image,
+    .why-choose-card,
+    .perfect-places-content,
+    .perfect-places-video,
+    .newsletter-section .newsletter-content,
+    .newsletter-section .newsletter-image {
         width: 100%;
+    }
+
+    .popular-tour-section,
+    .perfect-places,
+    .newsletter-section {
+        flex-direction: column;
     }
 
     .section-description {
         margin-bottom: 1.8rem;
-    }
-
-    .why-choose-card {
-        width: 100%;
     }
 
     .deals-card {
